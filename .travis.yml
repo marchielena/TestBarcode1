@@ -1,0 +1,3 @@
+lenguage : java
+sudo : true 
+script : mvn install
