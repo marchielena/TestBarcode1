@@ -1,0 +1,27 @@
+package MarchiElena;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class AppTest {
+
+    @Test
+    public void Test1(){
+        assertEquals("example1","5901234123457", App.readBarcode(5, "10100010110100111011001100100110111101001110101010110011011011001000010101110010011101000100101"));
+    }
+
+    @Test
+    public void Test2(){
+        assertEquals("example2","5584985356706", App.readBarcode(5, "10101100010001001001110100010110110111011100101010100001010011101010000100010011100101010000101"));
+    }
+
+    @Test
+    public void Test3(){
+        assertEquals("example3","6360522428037", App.readBarcode(6, "10101111010000101010011101110010010011001001101010101110011011001001000111001010000101000100101"));
+    }
+
+    @Test
+    public void Test4(){
+        assertEquals("example4", "0274993071918", App.readBarcode(0,"10100100110111011010001100010110001011011110101010111001010001001100110111010011001101001000101"));
+    }
+}
